@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
+
 }
 a{
     text-decoration: none;
     color: inherit;
+}
+body{
+    font-family: roboto, sans-serif;
 }
 .main-header, .hero{
     background-color: #1f2937;
@@ -14,6 +17,7 @@ a{
 }
 .right-links{
     display: flex;
+    align-items: center;
     gap: 16px;
 }
 .main-header{
@@ -23,7 +27,6 @@ a{
 }
 .main-header p{
     font-weight: 900;
-    font-family: roboto, sans-serif;
     font-size: 32px;
 }
 .hero{
@@ -99,4 +102,33 @@ a{
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
+}
+.quote-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+    background-color: #e5e7eb;
+    margin-top: 10%;
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.quote-text{
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+    width: 100%;
+    line-height: 1.4;
+    font-style: italic;
+    padding: 0 20px;
+}
+.quote-credit{
+    align-self: flex-end;
+    font-size: 24px;
 }
